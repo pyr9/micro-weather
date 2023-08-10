@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: micro-weather-eureka-server-config
+  cloud:
+    config:
+      server:
+        git:
+          # git 地址，用来存储配置文件
+          uri: https://gitee.com/panyuro/spring-cloud-microservice-config.git
+          #存储配置文件的目录
+          searchPaths: config-repo
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762//eureka/

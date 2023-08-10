@@ -1,4 +1,5 @@
 rootProject.name = 'micro-weather'
 include 'eureka'
 include 'admin'
+include 'config'
 
